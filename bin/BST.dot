@@ -1,0 +1,18 @@
+digraph BST {
+node [shape=record]
+alpaca[label="<L> |<D> alpaca|<R> "]
+cat[label="<L> |<D> cat|<R> "]
+chupacabra[label="<L> |<D> chupacabra|<R> "]
+cow[label="<L> |<D> cow|<R> "]
+dog[label="<L> |<D> dog|<R> "]
+dragon[label="<L> |<D> dragon|<R> "]
+pelican[label="<L> |<D> pelican|<R> "]
+zebra[label="<L> |<D> zebra|<R> "]
+pelican:R -> zebra:D
+dragon:R -> pelican:D
+dog:R -> dragon:D
+cow:R -> dog:D
+chupacabra:R -> cow:D
+cat:R -> chupacabra:D
+alpaca:R -> cat:D
+}
